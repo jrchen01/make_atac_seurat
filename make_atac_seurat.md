@@ -1,4 +1,5 @@
-# How to make ATAC count seurat object
+# How to make ATAC count seurat object using NABI SRA files
 
-## Step1 download NCBI SRR/SRA files
-lo
+## 1. Download NCBI SRR/SRA files
+located to the GEO site, here using [GSE228660](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228660) as an example.
+
