@@ -1,4 +1,4 @@
-## This tutorial is about how to create a ATAC count seurat object using NCBI SRA files
+## Tutorial for creating a ATAC count seurat object using NCBI SRA files
 
   
 ## 1. Download NCBI SRR/SRA files
@@ -12,3 +12,9 @@ At the bottom of the page, navigate to the [SRA Run Selector](https://www.ncbi.n
 Activate a environment with `sra-tools`.  
 
 Use `downloadSRA_head.sh` to download fastq files to Cluster. This process will automatically invoke the `array.sh` srcipts. Ensure that both scripts are located in the same directory before starting the download.  
+
+```
+$ conda activate env_with_sratools
+$ sbatch downloadSRA_head.sh
+```
+
