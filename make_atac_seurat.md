@@ -11,10 +11,14 @@ At the bottom of the page, navigate to the [SRA Run Selector](https://www.ncbi.n
 ## 1.2 Download fastq files in Cluster using Accessertion List
 Activate a environment with `sra-tools`.  
 
-Use `downloadSRA_head.sh` to download fastq files to Cluster. This process will automatically invoke the `array.sh` srcipts. Ensure that both scripts are located in the same directory before starting the download.  
+Use `downloadSRA_head.sh` to download fastq files to Cluster. This process will automatically invoke the `array.sh` srcipts. Make sure that both scripts are located in the same directory before starting the download.  
 
 ```
 $ conda activate env_with_sratools
 $ sbatch downloadSRA_head.sh
 ```
+
+## 2. Run cellranger-atac for each fastq file
+
+For `cellranger-atac` installation, follow the instruction in [10x genomics ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/installation) website.
 
