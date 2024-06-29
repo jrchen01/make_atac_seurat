@@ -1,4 +1,4 @@
-### This tutorial is about how to create a ATAC count seurat object using NCBI SRA files
+## This tutorial is about how to create a ATAC count seurat object using NCBI SRA files
 
   
 ## 1. Download NCBI SRR/SRA files
