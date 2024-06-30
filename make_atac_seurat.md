@@ -88,7 +88,8 @@ For detailed instructions on preparing SRA data for Cell Ranger, please refer to
 ```
 $ sbatch cellranger_atac.sh
 ```
-Remeber to edit required parameters in the `cellranger_atac.sh` scripts:  
+Remeber to edit required parameters in the `cellranger_atac.sh` scripts:   
+
 `--id=ID` A unique run ID string (e.g., SRR24036956).  
 `--reference=PATH` Path to folder containing a Cell Ranger ATAC reference.  
 `--fastqs`	Path of the fastq files.  
