@@ -24,7 +24,7 @@ For `cellranger-atac` installation, follow the instruction in [10x genomics ATAC
   
 ### 2.1 Specify the fastq input for cellranger
 
-Retrive SRA files from NCBI, here using SRR24036956 as an example. Check the [Metadata](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&display=metadata) to confirm the details of the SRA file.  
+Retrive SRA files from NCBI, here using **SRR24036956** as an example. Check the [Metadata](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&display=metadata) to confirm the details of the SRA file.  
 
 Normally an ATAC-seq SRA file includes four fastq files: two index file and two read files.
 ```
@@ -38,13 +38,20 @@ total 23G
 -rw-rw-r-- 1 user 4.6G Jun 20 17:08 SRR24036956_3.fastq.gz
 -rw-rw-r-- 1 user 7.8G Jun 20 17:08 SRR24036956_4.fastq.gz
 ```
-
 Normally, two files of similar size are two read files `Read 1` and `Read 2`. The remaining two files would be the index files, the smaller file is  `Index 1` and the larger would be `Index 2`.
 
 The readable fastq file names for `cellranger-atac` is:  
+
 [Sample Name]_S1_L00[Lane Number]_[Read Type]_001.fastq.gz  
 
-[Sample Name]_S1__[Read Type]_001.fastq.gz
+[Sample Name]_S1__[Read Type]_001.fastq.gz  
+
+Where Read Type is one of:
+
+I1: Sample index read
+I2: Sample index read
+R1: Read 1
+R2: Read 2
 
 For detailed instructions on preparing SRA data for Cell Ranger, refer to the 10x Genomics guide: [How do I prepare Sequence Read Archive (SRA) data from NCBI for Cell Ranger?](https://kb.10xgenomics.com/hc/en-us/articles/115003802691-How-do-I-prepare-Sequence-Read-Archive-SRA-data-from-NCBI-for-Cell-Ranger).  
 
