@@ -38,7 +38,15 @@ total 23G
 -rw-rw-r-- 1 user 4.6G Jun 20 17:08 SRR24036956_3.fastq.gz
 -rw-rw-r-- 1 user 7.8G Jun 20 17:08 SRR24036956_4.fastq.gz
 ```
-Normally, two files of similar size are two read files `Read 1` and `Read 2`. The remaining two files would be the index files, the smaller file is  `Index 1` and the larger would be `Index 2`.
+Normally, two files of similar size are two read files `Read 1` and `Read 2`. The remaining two files would be the index files, the smaller file is  `Index 1` and the larger would be `Index 2`.  
+
+```
+So here:
+SRR24036956_1.fastq.gz is Index 1
+SRR24036956_2.fastq.gz is Read 1
+SRR24036956_3.fastq.gz is Index 2
+SRR24036956_4.fastq.gz is Read 2
+```
 
 The readable fastq file names for `cellranger-atac` is:  
 
