@@ -42,9 +42,9 @@ Normally, two files of similar size are two read files `Read 1` and `Read 2`. Th
 
 The readable fastq file names for `cellranger-atac` is:  
 
-[Sample Name]_S1_L00[Lane Number]_[Read Type]_001.fastq.gz  
+`[Sample Name]_S1_L00[Lane Number]_[Read Type]_001.fastq.gz`  
 
-[Sample Name]_S1__[Read Type]_001.fastq.gz  
+`[Sample Name]_S1__[Read Type]_001.fastq.gz`  
 
 Where Read Type is one of:
 
