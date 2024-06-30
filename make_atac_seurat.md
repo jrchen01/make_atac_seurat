@@ -48,7 +48,7 @@ SRR24036956_4.fastq.gz is `Read 2`
 
 ### 2.2 Prepare fastq file names for cellranger
 
-The readable fastq file names for `cellranger-atac` is:  
+The readable fastq file names for `cellranger-atac` are:  
 
 `[Sample Name]_S1_L00[Lane Number]_[Read Type]_001.fastq.gz`  
 
