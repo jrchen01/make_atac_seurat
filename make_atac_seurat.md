@@ -61,7 +61,7 @@ Where Read Type is one of:
 `R1: Read 1`  
 `R2: Read 2`  
   
-To create the required fastq file names, a soft copy is needed:  
+To create the required fastq file names, soft copies are needed:  
 ```
 $ ln -s SRR24036956_1.fastq.gz SRR24036956_S1_I1_001.fastq.gz; ln -s SRR24036956_3.fastq.gz SRR24036956_S1_I2_001.fastq.gz; ln -s SRR24036956_2.fastq.gz SRR24036956_S1_R2_001.fastq.gz; ln -s SRR24036956_4.fastq.gz SRR24036956_S1_R2_001.fastq.gz
 ```
