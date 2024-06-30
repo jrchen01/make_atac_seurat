@@ -48,10 +48,10 @@ The readable fastq file names for `cellranger-atac` is:
 
 Where Read Type is one of:
 
-I1: Sample index read
-I2: Sample index read
-R1: Read 1
-R2: Read 2
+`I1: Sample index read`  
+`I2: Sample index read`  
+`R1: Read 1`  
+`R2: Read 2`  
 
 For detailed instructions on preparing SRA data for Cell Ranger, refer to the 10x Genomics guide: [How do I prepare Sequence Read Archive (SRA) data from NCBI for Cell Ranger?](https://kb.10xgenomics.com/hc/en-us/articles/115003802691-How-do-I-prepare-Sequence-Read-Archive-SRA-data-from-NCBI-for-Cell-Ranger).  
 
