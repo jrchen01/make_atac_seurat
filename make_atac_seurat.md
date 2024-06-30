@@ -20,5 +20,26 @@ $ sbatch downloadSRA_head.sh
 
 ## 2. Run cellranger-atac for each fastq file
 
-For `cellranger-atac` installation, follow the instruction in [10x genomics ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/installation) website.
+For `cellranger-atac` installation, follow the instruction in [10x genomics ATAC](https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/installation) website.  
+  
+### 2.1 Specify the fastq input for cellranger
+
+Retrive SRA files from NCBI, here using SRR24036956 as an example. Check the [Metadata](https://trace.ncbi.nlm.nih.gov/Traces/index.html?view=run_browser&display=metadata) to confirm the details of the SRA file.  
+
+Normally an ATAC-seq SRA file includes four fastq files: two index file and two read files.
+```
+$ ls -lh
+```
+Here's a sample output:
+```
+total 23G
+-rw-rw-r-- 1 user 2.5G Jun 20 17:08 SRR24036956_1.fastq.gz
+-rw-rw-r-- 1 user 7.7G Jun 20 17:08 SRR24036956_2.fastq.gz
+-rw-rw-r-- 1 user 4.6G Jun 20 17:08 SRR24036956_3.fastq.gz
+-rw-rw-r-- 1 user 7.8G Jun 20 17:08 SRR24036956_4.fastq.gz
+```
+
+For detailed instructions on preparing SRA data for Cell Ranger, refer to the 10x Genomics guide: [How do I prepare Sequence Read Archive (SRA) data from NCBI for Cell Ranger?](https://kb.10xgenomics.com/hc/en-us/articles/115003802691-How-do-I-prepare-Sequence-Read-Archive-SRA-data-from-NCBI-for-Cell-Ranger).  
+
+
 
