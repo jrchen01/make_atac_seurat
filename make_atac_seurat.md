@@ -38,13 +38,13 @@ total 23G
 -rw-rw-r-- 1 user 4.6G Jun 20 17:08 SRR24036956_3.fastq.gz
 -rw-rw-r-- 1 user 7.8G Jun 20 17:08 SRR24036956_4.fastq.gz
 ```
-Normally, two files of similar size are two read files `Read 1` and `Read 2`. The remaining two files would be the index files, the smaller file is  `Index 1` and the larger would be `Index 2`.  
+I1 is the 8 bp sample barcode, R1 is the forward read, R2 is the 16 bp 10x feature barcode and R3 is the reverse read. For scATAC files, when head these files, length = 8 is I1, length = 16 is R2, length = 50 (or 49) are R1 and R3. Here, two files of similar size are two read files `Read 1` and `Read 3`. The remaining two files: the smaller file would be `Index 1`, the larger file is  `Read 2`.  
 
 So here:  
 SRR24036956_1.fastq.gz is `Index 1`  
 SRR24036956_2.fastq.gz is `Read 1`  
-SRR24036956_3.fastq.gz is `Index 2`  
-SRR24036956_4.fastq.gz is `Read 2`  
+SRR24036956_3.fastq.gz is `Read 2`  
+SRR24036956_4.fastq.gz is `Read 3`  
 
 ### 2.2 Prepare fastq file names for cellranger
 
